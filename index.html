@@ -303,11 +303,18 @@
       return {icon:'✅',text:'Тарелка в среднем близка к <b>50/25/25</b> — так держать!'};
     }
 
+    // Текущая дата по-русски — всегда актуальная, не устаревает
+    function todayLabel(){
+      var mm=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+      var d=new Date();
+      return 'Сегодня, '+d.getDate()+' '+mm[d.getMonth()];
+    }
+
     // ---- RENDER ROOT ----
     function render(){
       var app=document.getElementById('app');
       app.innerHTML=
-        '<header class="app-head"><div class="logo">Б</div><div><h1>'+esc(S.app.name)+'</h1><p>'+esc(S.today.dateLabel)+'</p></div></header>'+
+        '<header class="app-head"><div class="logo">Б</div><div><h1>'+esc(S.app.name)+'</h1><p>'+esc(todayLabel())+'</p></div></header>'+
         '<div class="tabs"><div class="tab'+(S.view==='today'?' on':'')+'" data-view="today">Сегодня</div><div class="tab'+(S.view==='analytics'?' on':'')+'" data-view="analytics">Аналитика</div></div>'+
         (S.view==='today'?dashboardHTML():analyticsHTML());
       // tabs
