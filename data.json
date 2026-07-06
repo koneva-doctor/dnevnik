@@ -1,52 +1,228 @@
 {
-  "app": { "name": "Баланс дня" },
+  "app": {
+    "name": "Баланс дня"
+  },
   "settings": {
-    "targets": { "greens": 50, "protein": 25, "carbs": 25 },
+    "targets": {
+      "greens": 50,
+      "protein": 25,
+      "carbs": 25
+    },
     "balanceGoal": 75,
     "waterGoalPct": 80
   },
   "today": {
-    "dateLabel": "Сегодня, 5 июля",
+    "dateLabel": "Сегодня, 6 июля",
     "plate": {
-      "portions": { "greens": 3, "protein": 2, "carbs": 1 },
+      "portions": {
+        "greens": 3,
+        "protein": 2,
+        "carbs": 1
+      },
       "meals": 2,
       "fatsQuality": "good"
     },
-    "water": { "consumed": 1250, "goal": 2000, "unit": "мл", "glassSize": 250 },
-    "wellbeing": { "scale": 5, "morning": 4, "evening": null }
+    "water": {
+      "consumed": 1250,
+      "goal": 2000,
+      "unit": "мл",
+      "glassSize": 250
+    },
+    "wellbeing": {
+      "scale": 5,
+      "morning": 4,
+      "evening": null
+    }
   },
   "categories": [
-    { "id": "move", "emoji": "🏃", "name": "Движение", "type": "counter", "goal": 8000, "step": 1000, "unit": "шагов", "value": 5200 },
-    { "id": "vit", "emoji": "💊", "name": "Витамины", "type": "multi", "value": { "m": true, "d": false, "e": false } },
-    { "id": "sleep", "emoji": "😴", "name": "Сон", "type": "rating", "value": 4 }
+    {
+      "id": "move",
+      "emoji": "🏃",
+      "name": "Движение",
+      "type": "counter",
+      "goal": 8000,
+      "step": 1000,
+      "unit": "шагов",
+      "value": 5200
+    },
+    {
+      "id": "vit",
+      "emoji": "💊",
+      "name": "Витамины",
+      "type": "multi",
+      "value": {
+        "m": true,
+        "d": false,
+        "e": false
+      }
+    },
+    {
+      "id": "sleep",
+      "emoji": "😴",
+      "name": "Сон",
+      "type": "rating",
+      "value": 4
+    }
   ],
   "history": [
-    { "label": "Позапрошлая неделя", "days": [
-      { "day": "Пн", "g": 40, "p": 25, "c": 35, "water": 60 },
-      { "day": "Вт", "g": 35, "p": 30, "c": 35, "water": 55 },
-      { "day": "Ср", "g": 48, "p": 26, "c": 26, "water": 70 },
-      { "day": "Чт", "g": 30, "p": 35, "c": 35, "water": 45 },
-      { "day": "Пт", "g": 42, "p": 29, "c": 29, "water": 65 },
-      { "day": "Сб", "g": 55, "p": 25, "c": 20, "water": 80 },
-      { "day": "Вс", "g": 38, "p": 31, "c": 31, "water": 58 }
-    ]},
-    { "label": "Прошлая неделя", "days": [
-      { "day": "Пн", "g": 48, "p": 26, "c": 26, "water": 90 },
-      { "day": "Вт", "g": 42, "p": 30, "c": 28, "water": 70 },
-      { "day": "Ср", "g": 55, "p": 20, "c": 25, "water": 80 },
-      { "day": "Чт", "g": 38, "p": 32, "c": 30, "water": 55 },
-      { "day": "Пт", "g": 50, "p": 25, "c": 25, "water": 82 },
-      { "day": "Сб", "g": 60, "p": 20, "c": 20, "water": 60 },
-      { "day": "Вс", "g": 44, "p": 28, "c": 28, "water": 85 }
-    ]},
-    { "label": "Эта неделя", "days": [
-      { "day": "Пн", "g": 40, "p": 30, "c": 30, "water": 85 },
-      { "day": "Вт", "g": 46, "p": 27, "c": 27, "water": 82 },
-      { "day": "Ср", "g": 52, "p": 24, "c": 24, "water": 80 },
-      { "day": "Чт", "g": 42, "p": 30, "c": 28, "water": 70 },
-      { "day": "Пт", "g": 44, "p": 28, "c": 28, "water": 88 },
-      { "day": "Сб", "g": 58, "p": 22, "c": 20, "water": 60 },
-      { "day": "Вс", "today": true }
-    ]}
+    {
+      "label": "Позапрошлая неделя",
+      "days": [
+        {
+          "day": "Пн",
+          "g": 40,
+          "p": 25,
+          "c": 35,
+          "water": 60
+        },
+        {
+          "day": "Вт",
+          "g": 35,
+          "p": 30,
+          "c": 35,
+          "water": 55
+        },
+        {
+          "day": "Ср",
+          "g": 48,
+          "p": 26,
+          "c": 26,
+          "water": 70
+        },
+        {
+          "day": "Чт",
+          "g": 30,
+          "p": 35,
+          "c": 35,
+          "water": 45
+        },
+        {
+          "day": "Пт",
+          "g": 42,
+          "p": 29,
+          "c": 29,
+          "water": 65
+        },
+        {
+          "day": "Сб",
+          "g": 55,
+          "p": 25,
+          "c": 20,
+          "water": 80
+        },
+        {
+          "day": "Вс",
+          "g": 38,
+          "p": 31,
+          "c": 31,
+          "water": 58
+        }
+      ]
+    },
+    {
+      "label": "Прошлая неделя",
+      "days": [
+        {
+          "day": "Пн",
+          "g": 48,
+          "p": 26,
+          "c": 26,
+          "water": 90
+        },
+        {
+          "day": "Вт",
+          "g": 42,
+          "p": 30,
+          "c": 28,
+          "water": 70
+        },
+        {
+          "day": "Ср",
+          "g": 55,
+          "p": 20,
+          "c": 25,
+          "water": 80
+        },
+        {
+          "day": "Чт",
+          "g": 38,
+          "p": 32,
+          "c": 30,
+          "water": 55
+        },
+        {
+          "day": "Пт",
+          "g": 50,
+          "p": 25,
+          "c": 25,
+          "water": 82
+        },
+        {
+          "day": "Сб",
+          "g": 60,
+          "p": 20,
+          "c": 20,
+          "water": 60
+        },
+        {
+          "day": "Вс",
+          "g": 44,
+          "p": 28,
+          "c": 28,
+          "water": 85
+        }
+      ]
+    },
+    {
+      "label": "Эта неделя",
+      "days": [
+        {
+          "day": "Пн",
+          "g": 40,
+          "p": 30,
+          "c": 30,
+          "water": 85
+        },
+        {
+          "day": "Вт",
+          "g": 46,
+          "p": 27,
+          "c": 27,
+          "water": 82
+        },
+        {
+          "day": "Ср",
+          "g": 52,
+          "p": 24,
+          "c": 24,
+          "water": 80
+        },
+        {
+          "day": "Чт",
+          "g": 42,
+          "p": 30,
+          "c": 28,
+          "water": 70
+        },
+        {
+          "day": "Пт",
+          "g": 44,
+          "p": 28,
+          "c": 28,
+          "water": 88
+        },
+        {
+          "day": "Сб",
+          "g": 58,
+          "p": 22,
+          "c": 20,
+          "water": 60
+        },
+        {
+          "day": "Вс",
+          "today": true
+        }
+      ]
+    }
   ]
 }
